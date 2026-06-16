@@ -1,0 +1,70 @@
+services:
+  # 1. База данных PostgreSQL
+  db:
+    image: postgres:15
+    container_name: pg_books
+    restart: always
+    # Указываем путь к .env, чтобы подтянулись переменные для базы 
+    env_file:
+      - .env
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # 2. Бэкенд на FastAPI
+  backend:
+    # Указываем папку db как контекст, так как Dockerfile лежит там 
+    build:
+      context: ./db
+      network: host
+    container_name: fastapi_backend
+    restart: always
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      - db
+    volumes:
+      - ./db/logs:/app/logs   
+      - ./db/upload:/app/upload
+      - ./db:/app 
+
+  # 3. Веб-сервер Nginx
+  nginx:
+    image: nginx:latest
+    container_name: frontend_nginx
+    ports:
+      - "1111:80"
+    volumes:
+    
+      - ./my-nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./src:/usr/share/nginx/html:ro
+    depends_on:
+      - backend
+
+
+#Бэкапы zerobyte
+  zerobyte:
+    image: ghcr.io/nicotsx/zerobyte:v0.37
+    container_name: zerobyte
+    restart: unless-stopped
+    ports:
+      - "4096:4096"
+    env_file:
+      - .env  
+    environment:
+      - BASE_URL=${ZEROBYTE_BASE_URL}
+      - APP_SECRET=${ZEROBYTE_APP_SECRET}
+      - TZ=${ZEROBYTE_TZ}
+    volumes:
+      - ./zerobyte_data:/var/lib/zerobyte
+      - ./:/data/project
+
+volumes:
+  postgres_data:
