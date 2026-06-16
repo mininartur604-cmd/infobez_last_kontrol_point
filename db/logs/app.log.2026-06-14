@@ -1,0 +1,2 @@
+2026-06-14 05:11:41,915 - INFO - IP: 172.18.0.5 | GET /api/.git/config | Status: 404 | Time: 0.97ms
+2026-06-14 23:09:22,397 - INFO - IP: 172.18.0.5 | GET /api/.git/config | Status: 404 | Time: 2.89ms

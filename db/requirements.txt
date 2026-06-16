@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+sqlalchemy
+asyncpg
+python-dotenv
+authx
+bcrypt
+cryptography
+pydantic
+email-validator
+python-multipart

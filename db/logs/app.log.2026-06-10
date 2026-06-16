@@ -1,0 +1,4 @@
+2026-06-10 09:57:32,751 - INFO - IP: 172.18.0.5 | GET /login.action | Status: 404 | Time: 3.90ms
+2026-06-10 09:57:43,887 - INFO - IP: 172.18.0.5 | POST /api | Status: 404 | Time: 2.87ms
+2026-06-10 09:57:44,682 - INFO - IP: 172.18.0.5 | POST /api/graphql | Status: 404 | Time: 2.64ms
+2026-06-10 09:57:46,342 - INFO - IP: 172.18.0.5 | POST /api/gql | Status: 404 | Time: 2.45ms

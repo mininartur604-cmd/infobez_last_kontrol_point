@@ -1,0 +1,199 @@
+2026-06-05 09:34:47,588 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 401 | Time: 8.61ms
+2026-06-05 09:39:52,970 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 401 | Time: 2.89ms
+2026-06-05 09:41:40,697 - INFO - IP: 172.18.0.5 | GET /api/my-tasks | Status: 403 | Time: 15.02ms
+2026-06-05 09:41:59,849 - INFO - IP: 172.18.0.5 | POST /login | Status: 200 | Time: 737.07ms
+2026-06-05 09:42:01,707 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 200 | Time: 3.56ms
+2026-06-05 09:42:16,347 - ERROR - IP: 172.18.0.5 | DELETE /api/admin/user | CRITICAL ERROR: Dependency rule on column 'user.id' tried to blank-out primary key column 'grade.student_id' on instance '<GradeModel at 0x7fa01e352550>' | Time: 58.99ms
+2026-06-05 09:42:43,800 - INFO - ACTION: База данных инициализирована. Персональные данные админа зашифрованы.
+2026-06-05 09:42:43,804 - INFO - IP: 172.18.0.5 | POST /setup_database | Status: 200 | Time: 1551.22ms
+2026-06-05 09:42:52,274 - INFO - IP: 172.18.0.5 | POST /login | Status: 200 | Time: 412.22ms
+2026-06-05 09:42:53,535 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 200 | Time: 1.75ms
+2026-06-05 09:43:05,521 - INFO - IP: 172.18.0.5 | POST /api/students | Status: 404 | Time: 0.92ms
+2026-06-05 09:43:26,030 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 200 | Time: 1.77ms
+2026-06-05 09:43:31,657 - INFO - IP: 172.18.0.5 | POST /api/students | Status: 404 | Time: 0.87ms
+2026-06-05 09:44:49,521 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 200 | Time: 5.72ms
+2026-06-05 09:44:52,613 - INFO - IP: 172.18.0.5 | GET /api/my-tasks | Status: 403 | Time: 13.49ms
+2026-06-05 09:45:01,251 - INFO - IP: 172.18.0.5 | POST /login | Status: 200 | Time: 741.47ms
+2026-06-05 09:45:02,877 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 200 | Time: 1.90ms
+2026-06-05 09:45:08,384 - INFO - ACTION: База данных инициализирована. Персональные данные админа зашифрованы.
+2026-06-05 09:45:08,388 - INFO - IP: 172.18.0.5 | POST /setup_database | Status: 200 | Time: 2458.58ms
+2026-06-05 09:45:18,056 - INFO - IP: 172.18.0.5 | POST /login | Status: 200 | Time: 413.40ms
+2026-06-05 09:45:19,577 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 200 | Time: 1.79ms
+2026-06-05 09:45:27,507 - INFO - ACTION: Успешно добавлен новый студент. Логин: 'Абат' | Email: 'abat@gmail.com'
+2026-06-05 09:45:27,510 - INFO - IP: 172.18.0.5 | POST /students | Status: 200 | Time: 549.75ms
+2026-06-05 09:45:30,464 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 200 | Time: 1.98ms
+2026-06-05 09:45:46,541 - INFO - ACTION: [ADMIN ID: 1] безвозвратно удалил пользователя 'Абат' (STUDENT ID: 2)
+2026-06-05 09:45:46,543 - INFO - IP: 172.18.0.5 | DELETE /api/admin/user | Status: 200 | Time: 106.82ms
+2026-06-05 09:45:57,225 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 200 | Time: 4.57ms
+2026-06-05 09:46:12,653 - INFO - ACTION: Успешно добавлен новый студент. Логин: 'L1mk0' | Email: 'sofiakireeva325@gmail.com'
+2026-06-05 09:46:12,654 - INFO - IP: 172.18.0.5 | POST /students | Status: 200 | Time: 434.49ms
+2026-06-05 09:46:15,286 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 200 | Time: 1.69ms
+2026-06-05 09:46:46,569 - INFO - IP: 172.18.0.5 | POST /groups | Status: 200 | Time: 44.15ms
+2026-06-05 09:46:49,659 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 200 | Time: 6.50ms
+2026-06-05 09:47:17,594 - INFO - IP: 172.18.0.5 | POST /teachers | Status: 200 | Time: 451.45ms
+2026-06-05 09:47:21,347 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 200 | Time: 1.66ms
+2026-06-05 09:47:45,927 - INFO - ACTION: Администратор (ID: 1) добавил нового администратора. Логин: 'second'
+2026-06-05 09:47:45,928 - INFO - IP: 172.18.0.5 | POST /api/admins | Status: 200 | Time: 568.94ms
+2026-06-05 09:47:48,854 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 200 | Time: 1.63ms
+2026-06-05 09:48:02,451 - INFO - IP: 172.18.0.5 | POST /logout | Status: 200 | Time: 9.45ms
+2026-06-05 09:48:22,215 - INFO - IP: 172.18.0.5 | POST /login | Status: 401 | Time: 391.31ms
+2026-06-05 09:48:26,828 - INFO - IP: 172.18.0.5 | POST /login | Status: 200 | Time: 397.96ms
+2026-06-05 09:48:28,958 - INFO - IP: 172.18.0.5 | GET /api/my-tasks | Status: 400 | Time: 6.10ms
+2026-06-05 09:48:31,872 - INFO - ACTION: [STUDENT ID: 3] открыл свой профиль
+2026-06-05 09:48:31,875 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 55.71ms
+2026-06-05 09:48:32,318 - INFO - ACTION: [STUDENT ID: 3] открыл свой профиль
+2026-06-05 09:48:32,320 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 16.38ms
+2026-06-05 09:48:36,825 - INFO - IP: 172.18.0.5 | POST /logout | Status: 200 | Time: 4.24ms
+2026-06-05 09:49:00,724 - INFO - IP: 172.18.0.5 | POST /login | Status: 200 | Time: 398.38ms
+2026-06-05 09:49:03,179 - INFO - ACTION: [TEACHER ID: 4] открыл свой профиль
+2026-06-05 09:49:03,183 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 21.26ms
+2026-06-05 09:49:06,572 - INFO - ACTION: [TEACHER ID: 4] открыл свой профиль
+2026-06-05 09:49:06,576 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 20.56ms
+2026-06-05 09:49:07,056 - INFO - ACTION: Учитель (ID: 4) запросил список заданий. Найдено: 0
+2026-06-05 09:49:07,057 - INFO - IP: 172.18.0.5 | GET /api/teacher/tasks | Status: 200 | Time: 55.49ms
+2026-06-05 09:49:08,755 - INFO - ACTION: [TEACHER ID: 4] открыл свой профиль
+2026-06-05 09:49:08,758 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 24.03ms
+2026-06-05 09:49:10,720 - INFO - ACTION: [TEACHER ID: 4] открыл свой профиль
+2026-06-05 09:49:10,724 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 24.31ms
+2026-06-05 09:49:11,169 - INFO - IP: 172.18.0.5 | GET /api/teacher/groups | Status: 200 | Time: 20.28ms
+2026-06-05 09:49:59,994 - INFO - ACTION: Учитель (ID: 4) успешно добавил новую задачу 'Написать код БЫДЛОКОД' для групп: ['271']
+2026-06-05 09:49:59,997 - INFO - IP: 172.18.0.5 | POST /api/task | Status: 200 | Time: 104.23ms
+2026-06-05 09:50:03,695 - INFO - ACTION: [TEACHER ID: 4] открыл свой профиль
+2026-06-05 09:50:03,699 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 25.17ms
+2026-06-05 09:50:05,270 - INFO - ACTION: [TEACHER ID: 4] открыл свой профиль
+2026-06-05 09:50:05,275 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 25.39ms
+2026-06-05 09:50:05,760 - INFO - ACTION: Учитель (ID: 4) запросил список заданий. Найдено: 1
+2026-06-05 09:50:05,764 - INFO - IP: 172.18.0.5 | GET /api/teacher/tasks | Status: 200 | Time: 59.71ms
+2026-06-05 09:50:08,664 - INFO - ACTION: [TEACHER ID: 4] открыл карточку задания (ID: 1) 'Написать код БЫДЛОКОД'
+2026-06-05 09:50:08,669 - INFO - IP: 172.18.0.5 | GET /api/tasks/1 | Status: 200 | Time: 66.18ms
+2026-06-05 09:50:09,191 - INFO - ACTION: Учитель (ID: 4) запросил решения для задачи 1. Найдено: 0
+2026-06-05 09:50:09,194 - INFO - IP: 172.18.0.5 | GET /api/task/1/solutions | Status: 200 | Time: 95.07ms
+2026-06-05 09:50:11,698 - INFO - ACTION: [TEACHER ID: 4] открыл свой профиль
+2026-06-05 09:50:11,701 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 24.51ms
+2026-06-05 09:50:12,167 - INFO - IP: 172.18.0.5 | GET /api/teacher/groups | Status: 200 | Time: 33.60ms
+2026-06-05 09:50:13,659 - INFO - ACTION: [TEACHER ID: 4] открыл свой профиль
+2026-06-05 09:50:13,662 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 23.66ms
+2026-06-05 09:50:15,628 - INFO - IP: 172.18.0.5 | POST /logout | Status: 200 | Time: 3.87ms
+2026-06-05 09:50:19,467 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 401 | Time: 1.70ms
+2026-06-05 09:50:34,776 - INFO - IP: 172.18.0.5 | POST /login | Status: 200 | Time: 406.85ms
+2026-06-05 09:50:36,216 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 200 | Time: 7.73ms
+2026-06-05 09:50:49,019 - INFO - ACTION: [ADMIN ID: 5] изменил группу студенту 'L1mk0' (ID: 3). Старая группа: 'БЕЗ ГРУППЫ' -> Новая группа: '271'
+2026-06-05 09:50:49,022 - INFO - IP: 172.18.0.5 | POST /api/admin/assign-group | Status: 200 | Time: 65.91ms
+2026-06-05 09:50:51,714 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 200 | Time: 6.72ms
+2026-06-05 09:50:53,876 - INFO - IP: 172.18.0.5 | GET /api/my-tasks | Status: 403 | Time: 10.99ms
+2026-06-05 09:51:03,963 - INFO - IP: 172.18.0.5 | POST /login | Status: 200 | Time: 410.48ms
+2026-06-05 09:51:05,429 - INFO - ACTION: [STUDENT ID: 3] запросил список задач для группы '271'. Найдено задач: 1
+2026-06-05 09:51:05,433 - INFO - IP: 172.18.0.5 | GET /api/my-tasks | Status: 200 | Time: 46.00ms
+2026-06-05 09:51:08,485 - INFO - ACTION: [STUDENT ID: 3] открыл карточку задания (ID: 1) 'Написать код БЫДЛОКОД'
+2026-06-05 09:51:08,488 - INFO - IP: 172.18.0.5 | GET /api/tasks/1 | Status: 200 | Time: 21.90ms
+2026-06-05 09:51:18,831 - INFO - ACTION: [STUDENT ID: 3 | Группа: 271] загрузил решение для задачи (ID: 1). Файлов: 1 ['main.py'] | Путь в БД: 'upload/271/3/task_1/main.py'
+2026-06-05 09:51:18,833 - INFO - IP: 172.18.0.5 | POST /api/solution/1 | Status: 200 | Time: 72.37ms
+2026-06-05 09:51:28,306 - INFO - IP: 172.18.0.5 | POST /login | Status: 200 | Time: 408.73ms
+2026-06-05 09:51:29,932 - INFO - ACTION: [TEACHER ID: 4] открыл свой профиль
+2026-06-05 09:51:29,933 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 9.81ms
+2026-06-05 09:51:33,201 - INFO - ACTION: [TEACHER ID: 4] открыл свой профиль
+2026-06-05 09:51:33,202 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 8.05ms
+2026-06-05 09:51:33,686 - INFO - ACTION: Учитель (ID: 4) запросил список заданий. Найдено: 1
+2026-06-05 09:51:33,690 - INFO - IP: 172.18.0.5 | GET /api/teacher/tasks | Status: 200 | Time: 53.41ms
+2026-06-05 09:51:35,253 - INFO - ACTION: [TEACHER ID: 4] открыл карточку задания (ID: 1) 'Написать код БЫДЛОКОД'
+2026-06-05 09:51:35,255 - INFO - IP: 172.18.0.5 | GET /api/tasks/1 | Status: 200 | Time: 11.84ms
+2026-06-05 09:51:35,739 - INFO - ACTION: Учитель (ID: 4) запросил решения для задачи 1. Найдено: 1
+2026-06-05 09:51:35,743 - INFO - IP: 172.18.0.5 | GET /api/task/1/solutions | Status: 200 | Time: 55.48ms
+2026-06-05 09:51:38,690 - INFO - IP: 172.18.0.5 | GET /api/user/3 | Status: 200 | Time: 37.95ms
+2026-06-05 09:51:39,165 - INFO - ACTION: [TEACHER ID: 4] открыл карточку задания (ID: 1) 'Написать код БЫДЛОКОД'
+2026-06-05 09:51:39,168 - INFO - IP: 172.18.0.5 | GET /api/tasks/1 | Status: 200 | Time: 28.28ms
+2026-06-05 09:51:39,629 - INFO - IP: 172.18.0.5 | GET /api/solution/1/student/3/grade | Status: 200 | Time: 30.10ms
+2026-06-05 09:51:40,590 - INFO - ACTION: [TEACHER ID: 4] успешно запросил список файлов решения. Студент (ID: 3) | Группа: '271' | Задача (ID: 1) | Найдено файлов: 1
+2026-06-05 09:51:40,593 - INFO - IP: 172.18.0.5 | GET /api/solution/files-list | Status: 200 | Time: 28.76ms
+2026-06-05 09:51:41,882 - INFO - ACTION: [TEACHER ID: 4] прочитал код файла 'main.py' студента (ID: 3) по задаче (ID: 1)
+2026-06-05 09:51:41,885 - INFO - IP: 172.18.0.5 | GET /api/solution/read-file | Status: 200 | Time: 33.04ms
+2026-06-05 09:52:19,443 - INFO - IP: 172.18.0.5 | POST /logout | Status: 200 | Time: 1.17ms
+2026-06-05 09:52:29,120 - INFO - IP: 172.18.0.5 | POST /login | Status: 200 | Time: 396.50ms
+2026-06-05 09:52:30,757 - INFO - ACTION: [STUDENT ID: 3] запросил список задач для группы '271'. Найдено задач: 1
+2026-06-05 09:52:30,761 - INFO - IP: 172.18.0.5 | GET /api/my-tasks | Status: 200 | Time: 32.64ms
+2026-06-05 09:52:32,506 - INFO - ACTION: [STUDENT ID: 3] открыл карточку задания (ID: 1) 'Написать код БЫДЛОКОД'
+2026-06-05 09:52:32,509 - INFO - IP: 172.18.0.5 | GET /api/tasks/1 | Status: 200 | Time: 19.44ms
+2026-06-05 09:52:45,266 - INFO - ACTION: [STUDENT ID: 3 | Группа: 271] загрузил решение для задачи (ID: 1). Файлов: 1 ['main.py'] | Путь в БД: 'upload/271/3/task_1/main.py'
+2026-06-05 09:52:45,269 - INFO - IP: 172.18.0.5 | POST /api/solution/1 | Status: 200 | Time: 28.97ms
+2026-06-05 09:53:13,802 - INFO - IP: 172.18.0.5 | POST /login | Status: 200 | Time: 404.51ms
+2026-06-05 09:53:15,347 - INFO - ACTION: [TEACHER ID: 4] открыл свой профиль
+2026-06-05 09:53:15,350 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 24.07ms
+2026-06-05 09:53:16,699 - INFO - ACTION: [TEACHER ID: 4] открыл свой профиль
+2026-06-05 09:53:16,703 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 26.50ms
+2026-06-05 09:53:17,190 - INFO - ACTION: Учитель (ID: 4) запросил список заданий. Найдено: 1
+2026-06-05 09:53:17,194 - INFO - IP: 172.18.0.5 | GET /api/teacher/tasks | Status: 200 | Time: 56.30ms
+2026-06-05 09:53:18,127 - INFO - ACTION: [TEACHER ID: 4] открыл карточку задания (ID: 1) 'Написать код БЫДЛОКОД'
+2026-06-05 09:53:18,132 - INFO - IP: 172.18.0.5 | GET /api/tasks/1 | Status: 200 | Time: 29.35ms
+2026-06-05 09:53:18,624 - INFO - ACTION: Учитель (ID: 4) запросил решения для задачи 1. Найдено: 1
+2026-06-05 09:53:18,627 - INFO - IP: 172.18.0.5 | GET /api/task/1/solutions | Status: 200 | Time: 54.05ms
+2026-06-05 09:53:20,056 - INFO - IP: 172.18.0.5 | GET /api/user/3 | Status: 200 | Time: 22.32ms
+2026-06-05 09:53:20,508 - INFO - ACTION: [TEACHER ID: 4] открыл карточку задания (ID: 1) 'Написать код БЫДЛОКОД'
+2026-06-05 09:53:20,511 - INFO - IP: 172.18.0.5 | GET /api/tasks/1 | Status: 200 | Time: 26.96ms
+2026-06-05 09:53:20,964 - INFO - IP: 172.18.0.5 | GET /api/solution/1/student/3/grade | Status: 200 | Time: 21.81ms
+2026-06-05 09:53:21,914 - INFO - ACTION: [TEACHER ID: 4] успешно запросил список файлов решения. Студент (ID: 3) | Группа: '271' | Задача (ID: 1) | Найдено файлов: 1
+2026-06-05 09:53:21,918 - INFO - IP: 172.18.0.5 | GET /api/solution/files-list | Status: 200 | Time: 13.00ms
+2026-06-05 09:53:30,086 - INFO - ACTION: Учитель (ID: 4) выставил оценку 42 студенту (ID: 3) за задание (ID: 1)
+2026-06-05 09:53:30,090 - INFO - IP: 172.18.0.5 | POST /api/solution/1/student/3/grade | Status: 200 | Time: 68.22ms
+2026-06-05 09:53:32,782 - INFO - IP: 172.18.0.5 | POST /logout | Status: 200 | Time: 1.10ms
+2026-06-05 10:11:54,095 - INFO - IP: 172.18.0.5 | POST /login | Status: 200 | Time: 400.56ms
+2026-06-05 10:11:56,102 - INFO - ACTION: [STUDENT ID: 3] запросил список задач для группы '271'. Найдено задач: 1
+2026-06-05 10:11:56,107 - INFO - IP: 172.18.0.5 | GET /api/my-tasks | Status: 200 | Time: 28.19ms
+2026-06-05 10:12:31,589 - INFO - ACTION: [STUDENT ID: 3] открыл карточку задания (ID: 1) 'Написать код БЫДЛОКОД'
+2026-06-05 10:12:31,593 - INFO - IP: 172.18.0.5 | GET /api/tasks/1 | Status: 200 | Time: 37.64ms
+2026-06-05 10:13:05,843 - INFO - ACTION: [STUDENT ID: 3] открыл свой профиль
+2026-06-05 10:13:05,847 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 19.87ms
+2026-06-05 10:13:06,274 - INFO - ACTION: [STUDENT ID: 3] открыл свой профиль
+2026-06-05 10:13:06,276 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 10.02ms
+2026-06-05 10:13:33,580 - INFO - ACTION: [STUDENT ID: 3] запросил список задач для группы '271'. Найдено задач: 1
+2026-06-05 10:13:33,585 - INFO - IP: 172.18.0.5 | GET /api/my-tasks | Status: 200 | Time: 32.12ms
+2026-06-05 10:13:39,829 - INFO - ACTION: [STUDENT ID: 3] открыл карточку задания (ID: 1) 'Написать код БЫДЛОКОД'
+2026-06-05 10:13:39,835 - INFO - IP: 172.18.0.5 | GET /api/tasks/1 | Status: 200 | Time: 36.92ms
+2026-06-05 10:15:31,382 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 403 | Time: 5.27ms
+2026-06-05 10:15:40,250 - INFO - ACTION: [STUDENT ID: 3] открыл свой профиль
+2026-06-05 10:15:40,251 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 13.25ms
+2026-06-05 10:15:43,984 - INFO - ACTION: [STUDENT ID: 3] запросил список задач для группы '271'. Найдено задач: 1
+2026-06-05 10:15:43,988 - INFO - IP: 172.18.0.5 | GET /api/my-tasks | Status: 200 | Time: 34.87ms
+2026-06-05 10:16:00,677 - INFO - ACTION: [STUDENT ID: 3] открыл свой профиль
+2026-06-05 10:16:00,681 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 26.99ms
+2026-06-05 10:16:02,393 - INFO - IP: 172.18.0.5 | GET /api/teacher/tasks | Status: 403 | Time: 10.77ms
+2026-06-05 10:16:02,455 - INFO - ACTION: [STUDENT ID: 3] запросил список задач для группы '271'. Найдено задач: 1
+2026-06-05 10:16:02,458 - INFO - IP: 172.18.0.5 | GET /api/my-tasks | Status: 200 | Time: 33.45ms
+2026-06-05 10:16:13,343 - INFO - ACTION: [STUDENT ID: 3] открыл свой профиль
+2026-06-05 10:16:13,347 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 21.16ms
+2026-06-05 10:16:15,304 - INFO - ACTION: [STUDENT ID: 3] запросил список задач для группы '271'. Найдено задач: 1
+2026-06-05 10:16:15,308 - INFO - IP: 172.18.0.5 | GET /api/my-tasks | Status: 200 | Time: 30.02ms
+2026-06-05 10:16:19,503 - INFO - ACTION: [STUDENT ID: 3] запросил список задач для группы '271'. Найдено задач: 1
+2026-06-05 10:16:19,507 - INFO - IP: 172.18.0.5 | GET /api/my-tasks | Status: 200 | Time: 29.61ms
+2026-06-05 10:16:49,001 - INFO - ACTION: [STUDENT ID: 3] открыл свой профиль
+2026-06-05 10:16:49,006 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 26.53ms
+2026-06-05 10:16:50,654 - INFO - IP: 172.18.0.5 | GET /api/teacher/tasks | Status: 403 | Time: 21.73ms
+2026-06-05 10:16:50,683 - INFO - ACTION: [STUDENT ID: 3] запросил список задач для группы '271'. Найдено задач: 1
+2026-06-05 10:16:50,688 - INFO - IP: 172.18.0.5 | GET /api/my-tasks | Status: 200 | Time: 39.35ms
+2026-06-05 10:16:57,229 - INFO - ACTION: [STUDENT ID: 3] открыл свой профиль
+2026-06-05 10:16:57,233 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 24.69ms
+2026-06-05 10:16:58,959 - INFO - ACTION: [STUDENT ID: 3] запросил список задач для группы '271'. Найдено задач: 1
+2026-06-05 10:16:58,961 - INFO - IP: 172.18.0.5 | GET /api/my-tasks | Status: 200 | Time: 15.25ms
+2026-06-05 10:17:13,901 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 403 | Time: 2.20ms
+2026-06-05 10:17:29,985 - INFO - IP: 172.18.0.5 | POST /login | Status: 200 | Time: 404.36ms
+2026-06-05 10:17:32,074 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 200 | Time: 6.61ms
+2026-06-05 10:17:52,748 - INFO - IP: 172.18.0.5 | GET /api/my-tasks | Status: 403 | Time: 5.82ms
+2026-06-05 10:17:58,076 - INFO - ACTION: [ADMIN ID: 1] открыл свой профиль
+2026-06-05 10:17:58,079 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 23.08ms
+2026-06-05 10:17:58,522 - INFO - ACTION: [ADMIN ID: 1] открыл свой профиль
+2026-06-05 10:17:58,525 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 27.31ms
+2026-06-05 10:18:08,510 - INFO - ACTION: [ADMIN ID: 1] открыл свой профиль
+2026-06-05 10:18:08,515 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 23.53ms
+2026-06-05 10:18:10,794 - INFO - ACTION: [ADMIN ID: 1] открыл свой профиль
+2026-06-05 10:18:10,798 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 23.80ms
+2026-06-05 10:18:13,140 - INFO - ACTION: [ADMIN ID: 1] открыл свой профиль
+2026-06-05 10:18:13,143 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 25.13ms
+2026-06-05 10:18:13,582 - INFO - IP: 172.18.0.5 | GET /api/teacher/groups | Status: 403 | Time: 10.50ms
+2026-06-05 10:18:17,428 - INFO - ACTION: [ADMIN ID: 1] открыл свой профиль
+2026-06-05 10:18:17,432 - INFO - IP: 172.18.0.5 | GET /api/profile | Status: 200 | Time: 23.29ms
+2026-06-05 10:18:18,486 - INFO - IP: 172.18.0.5 | POST /logout | Status: 200 | Time: 3.81ms
+2026-06-05 10:20:18,599 - INFO - IP: 172.18.0.5 | POST /login | Status: 401 | Time: 410.62ms
+2026-06-05 10:20:24,648 - INFO - IP: 172.18.0.5 | POST /login | Status: 200 | Time: 385.63ms
+2026-06-05 10:20:27,037 - INFO - ACTION: [STUDENT ID: 3] запросил список задач для группы '271'. Найдено задач: 1
+2026-06-05 10:20:27,041 - INFO - IP: 172.18.0.5 | GET /api/my-tasks | Status: 200 | Time: 29.91ms
+2026-06-05 10:25:47,241 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 401 | Time: 4.25ms
+2026-06-05 10:25:48,551 - INFO - IP: 172.18.0.5 | GET /api/check-role/admin | Status: 401 | Time: 4.04ms
