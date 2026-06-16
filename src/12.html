@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DPADIO — Админ панель</title>
+    <link rel="stylesheet" href="12.css">
+    <style>
+        /* Дополнительные стили для модального окна */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .modal {
+            width: 450px;
+            max-width: 90%;
+            background: #221b1e;
+            border: 1px solid #46353a;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .modal h2 {
+            margin-top: 0;
+            color: #ddd6cf;
+        }
+        .modal-form {
+            margin: 20px 0;
+        }
+        .modal-form label {
+            display: block;
+            margin-top: 12px;
+            margin-bottom: 5px;
+            color: #a89b93;
+            font-size: 0.85rem;
+        }
+        .modal-input {
+            width: 100%;
+            padding: 10px;
+            background: #181416;
+            border: 1px solid #3b3134;
+            color: #ddd6cf;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .modal-input:focus {
+            outline: none;
+            border-color: #7a2d3a;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+        .close {
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #a89b93;
+        }
+        .close:hover {
+            color: #ddd6cf;
+        }
+        .card button {
+            margin: 5px;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+        .delete-btn {
+            background: #8b0000 !important;
+        }
+        .delete-btn:hover {
+            background: #cc0000 !important;
+        }
+        .danger-btn {
+            background: darkred !important;
+        }
+        .danger-btn:hover {
+            background: #8b0000 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="window header">
+        <div class="title">DPADIO</div>
+        <div class="nav">
+            <a href="12.html" class="active">АДМИН</a>
+            <a href="11.html">УЧИТЕЛЬ</a>
+            <a href="3.html">УЧЕНИК</a>
+            <a href="1.html" id="logout-btn">ВЫХОД</a>
+        </div>
+        <div class="user">👑 АДМИНИСТРАТОР — SYSTEM</div>
+    </div>
+
+    <div class="window">
+        <h2 class="section-title">⚙️ АДМИН ПАНЕЛЬ</h2>
+        <div class="grid">
+            <!-- УЧЕНИКИ -->
+            <div class="card">
+                <div class="card-title">👨‍🎓 УЧЕНИКИ</div>
+                <button onclick="openModal('student')">➕ Добавить</button>
+                <button onclick="openModal('assignGroup')">📎 Назначить группу</button>
+                <button onclick="openModal('deleteUser')" class="delete-btn">🗑️ Удалить</button>
+            </div>
+
+            <!-- УЧИТЕЛЯ -->
+            <div class="card">
+                <div class="card-title">👨‍🏫 УЧИТЕЛЯ</div>
+                <button onclick="openModal('teacher')">➕ Добавить</button>
+                <button onclick="openModal('teacherGroup')">👥 Группы учителя</button>
+                <button onclick="openModal('deleteUser')" class="delete-btn">🗑️ Удалить</button>
+            </div>
+
+            <!-- АДМИНЫ -->
+            <div class="card">
+                <div class="card-title">👑 АДМИНЫ</div>
+                <button onclick="openModal('admin')">➕ Добавить</button>
+                <button onclick="openModal('changePassword')">🔑 Сброс пароля</button>
+                <button onclick="openModal('deleteUser')" class="delete-btn">🗑️ Удалить</button>
+            </div>
+
+            <!-- ГРУППЫ -->
+            <div class="card">
+                <div class="card-title">📁 ГРУППЫ</div>
+                <button onclick="openModal('group')">➕ Создать группу</button>
+                <button onclick="alert('⚠️ Функция удаления группы в разработке')" disabled>🗑️ Удалить группу</button>
+            </div>
+            
+            <!-- СИСТЕМА -->
+            <div class="card">
+                <div class="card-title">⚙️ СИСТЕМА</div>
+                <button onclick="rebuildDB()" class="danger-btn">⚠️ Сброс Базы Данных</button>
+                <button onclick="location.reload()">🔄 Обновить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно -->
+<div id="modal-overlay" class="modal-overlay" style="display: none;">
+    <div class="window modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title">Добавление</h2>
+        <div id="modal-form" class="modal-form">
+            <!-- Поля генерируются динамически -->
+        </div>
+        <div class="buttons">
+            <button class="btn primary" id="modal-submit">✅ Отправить</button>
+            <button class="btn" onclick="closeModal()">❌ Отмена</button>
+        </div>
+    </div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

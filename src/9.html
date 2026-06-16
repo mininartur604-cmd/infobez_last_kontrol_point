@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DPADIO — Проверка решения</title>
+    <link rel="stylesheet" href="9.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="window header">
+        <div class="title">DPADIO</div>
+
+        <div class="nav">
+            <a href="11.html">ГЛАВНАЯ</a>
+            <a href="6.html">ПРОВЕРКА</a>
+            <a href="7.html">СОЗДАТЬ</a>
+            <a href="10.html">ПРОФИЛЬ</a>
+            <a href="1.html" id="logout-btn">ВЫХОД</a>
+        </div>
+
+        <div class="user">
+            ПРОВЕРКА РЕШЕНИЯ
+        </div>
+    </div>
+
+    <div class="window">
+
+        <h2 class="section-title">📝 ПРОВЕРКА РЕШЕНИЯ</h2>
+
+        <div class="meta" id="meta-info">
+            <div>📖 Задание: <span id="task-title">Загрузка...</span></div>
+            <div>👨‍🎓 Студент: <span id="student-name">Загрузка...</span></div>
+            <div>👥 Группа: <span id="student-group">Загрузка...</span></div>
+            <div>⭐ Оценка: <span id="current-grade">—</span></div>
+        </div>
+
+        <div class="files-list" id="files-list">
+            <div class="code-title">📁 ФАЙЛЫ РЕШЕНИЯ</div>
+            <div id="files-container">⏳ Загрузка файлов...</div>
+        </div>
+
+        <div class="code-box" id="code-viewer" style="display: none;">
+            <div class="code-title" id="current-file-name">КОД</div>
+            <pre class="code" id="code-content"></pre>
+        </div>
+
+        <div class="grade-box">
+            <label>🎯 Оценка (0-100)</label>
+            <input type="number" id="grade-value" min="0" max="100" step="1" placeholder="Введите оценку">
+            
+            <button id="save-grade-btn">💾 СОХРАНИТЬ ОЦЕНКУ</button>
+            <div id="grade-status" style="margin-top: 10px; font-size: 0.85rem; color: #a89b93;"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="teacher-grade.js"></script>
+
+</body>
+</html>

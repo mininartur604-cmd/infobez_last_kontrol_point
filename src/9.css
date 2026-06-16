@@ -1,0 +1,138 @@
+:root {
+    --bg: #171214;
+
+    --surface: #221b1e;
+    --surface-light: #2d2428;
+
+    --primary: #5c232d;
+    --primary-light: #7a2d3a;
+
+    --border: #46353a;
+
+    --text: #ddd6cf;
+    --text-secondary: #a89b93;
+
+    --shadow: rgba(0,0,0,.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #1a1417, #171214);
+    color: var(--text);
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: 40px auto;
+}
+
+.window {
+    border: 1px solid var(--border);
+    background: linear-gradient(180deg, var(--surface-light), var(--surface));
+    padding: 18px;
+    box-shadow: 0 3px 8px var(--shadow);
+}
+
+/* HEADER */
+
+.header {
+    margin-bottom: 16px;
+}
+
+.title {
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    border-bottom: 1px solid var(--primary-light);
+    padding-bottom: 8px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.85rem;
+
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+}
+
+.nav a:hover {
+    background: var(--surface-light);
+}
+
+.user {
+    margin-top: 10px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+/* CONTENT */
+
+.section-title {
+    margin: 0 0 14px 0;
+}
+
+.meta {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 14px;
+}
+
+.code-box, .output-box {
+    border: 1px solid var(--border);
+    background: #0f0c0d;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.code-title {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+}
+
+.code, .output {
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+.grade-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input, textarea {
+    padding: 10px;
+    background: #181416;
+    border: 1px solid #3b3134;
+    color: var(--text);
+    outline: none;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+
+    border: 1px solid #7f3945;
+    background: linear-gradient(180deg, #6b2b36, #552029);
+
+    color: var(--text);
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(180deg, #7c3340, #632632);
+}

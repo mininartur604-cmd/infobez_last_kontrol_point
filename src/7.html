@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DPADIO — Создать задание</title>
+    <link rel="stylesheet" href="7.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="window header">
+        <div class="title">DPADIO</div>
+
+        <div class="nav">
+            <a href="11.html">ГЛАВНАЯ</a>
+            <a href="6.html">ПРОВЕРКА</a>
+            <a href="7.html">СОЗДАТЬ</a>
+            <a href="10.html">ПРОФИЛЬ</a>
+            <a href="1.html" id="logout-btn">ВЫХОД</a>
+        </div>
+
+        <div class="user">
+            ПРЕПОДАВАТЕЛЬ — <span id="teacher-name">Загрузка...</span>
+        </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="window">
+
+        <h2 class="section-title">ДОБАВИТЬ ЗАДАНИЕ</h2>
+
+        <div class="grid-2-1">
+
+            <div>
+                <label>Название задания</label>
+                <input type="text" id="task-title" placeholder="Введите название задания">
+
+                <label>Описание</label>
+                <textarea id="task-desc" placeholder="Что нужно сделать..."></textarea>
+            </div>
+
+            <div>
+                <label>Группы (Ctrl + клик для выбора нескольких)</label>
+                <select multiple id="task-groups" style="height: 150px;">
+                    <option value="101">Группа 101</option>
+                    <option value="102">Группа 102</option>
+                    <option value="103">Группа 103</option>
+                    <option value="201">Группа 201</option>
+                    <option value="202">Группа 202</option>
+                    <option value="301">Группа 301</option>
+                </select>
+
+                <label>Срок сдачи (дедлайн)</label>
+                <input type="datetime-local" id="task-deadline">
+            </div>
+
+        </div>
+
+        <div class="buttons">
+            <button id="save-task-btn">Создать задание</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="teacher.js"></script>
+
+</body>
+</html>

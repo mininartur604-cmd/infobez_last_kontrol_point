@@ -1,0 +1,168 @@
+:root {
+    --bg: #171214;
+
+    --surface: #221b1e;
+    --surface-light: #2d2428;
+
+    --primary: #5c232d;
+    --primary-light: #7a2d3a;
+
+    --border: #46353a;
+
+    --text: #ddd6cf;
+    --text-secondary: #a89b93;
+
+    --shadow: rgba(0,0,0,.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #1a1417, #171214);
+    color: var(--text);
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: 40px auto;
+}
+
+.window {
+    border: 1px solid var(--border);
+    background: linear-gradient(180deg, var(--surface-light), var(--surface));
+    padding: 18px;
+    box-shadow: 0 3px 8px var(--shadow);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    margin-bottom: 16px;
+}
+
+.title {
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    border-bottom: 1px solid var(--primary-light);
+    padding-bottom: 8px;
+}
+
+.nav {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.85rem;
+
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+}
+
+.nav a:hover {
+    background: var(--surface-light);
+}
+
+.user {
+    margin-top: 10px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+/* =========================
+   TASK INFO
+========================= */
+
+h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.desc {
+    margin-bottom: 12px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* =========================
+   CODE CONSOLE (BIG)
+========================= */
+
+.console {
+    height: 600px;
+
+    border: 1px solid var(--border);
+    background: #0f0c0d;
+
+    padding: 12px;
+
+    font-family: monospace;
+    font-size: 0.9rem;
+
+    color: var(--text);
+
+    outline: none;
+    overflow: auto;
+
+    line-height: 1.4;
+}
+
+/* =========================
+   TOOLBAR (5 BUTTONS)
+========================= */
+
+.toolbar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+
+    margin-top: 12px;
+}
+
+.toolbar button {
+    height: 40px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+
+    color: var(--text);
+
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    transition: 0.15s;
+}
+
+.toolbar button:hover {
+    background: var(--surface-light);
+}
+
+/* =========================
+   OUTPUT
+========================= */
+
+.output {
+    margin-top: 14px;
+    padding: 10px;
+
+    border: 1px solid var(--border);
+    background: #0e0c0d;
+
+    color: var(--text-secondary);
+
+    font-family: monospace;
+    font-size: 0.85rem;
+}

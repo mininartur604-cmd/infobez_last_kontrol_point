@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DPADIO — Регистрация</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="window">
+        <h1 class="title">DPADIO</h1>
+        <div class="subtitle">РЕГИСТРАЦИЯ</div>
+
+        <label>Логин</label>
+        <input type="text" id="login" placeholder="Придумайте логин">
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Введите email">
+
+        <label>Пароль</label>
+        <input type="password" id="password" placeholder="Введите пароль">
+
+        <label>Подтверждение пароля</label>
+        <input type="password" id="password_confirm" placeholder="Повторите пароль">
+
+        <label>Имя</label>
+        <input type="text" id="first_name">
+
+        <label>Фамилия</label>
+        <input type="text" id="second_name">
+
+        <label>Отчество</label>
+        <input type="text" id="middle_name">
+
+        <label>Роль</label>
+        <select id="role">
+            <option value="student">Ученик</option>
+            <option value="teacher">Преподаватель</option>
+        </select>
+
+        <div class="buttons">
+            <button class="btn primary" id="regButton">СОЗДАТЬ АККАУНТ</button>
+        </div>
+    </div>
+</div>
+
+<script src="register.js"></script>
+
+</body>
+</html>

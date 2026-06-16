@@ -1,0 +1,137 @@
+:root {
+    --bg: #171214;
+
+    --surface: #221b1e;
+    --surface-light: #2d2428;
+
+    --primary: #5c232d;
+    --primary-light: #7a2d3a;
+
+    --border: #46353a;
+
+    --text: #ddd6cf;
+    --text-secondary: #a89b93;
+
+    --shadow: rgba(0,0,0,.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #1a1417, #171214);
+    color: var(--text);
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.container {
+    width: min(420px, 92%);
+    margin: 120px auto;
+}
+
+.window {
+    border: 1px solid var(--border);
+    background: linear-gradient(180deg, var(--surface-light), var(--surface));
+    padding: 26px;
+    box-shadow: 0 3px 8px var(--shadow);
+}
+
+.title {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    border-bottom: 2px solid var(--primary-light);
+    padding-bottom: 10px;
+}
+
+.subtitle {
+    margin-top: 10px;
+    margin-bottom: 18px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    background: #181416;
+    border: 1px solid #3b3134;
+    color: var(--text);
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--primary-light);
+}
+
+/* =========================
+   BUTTONS (FIXED HARD STYLE)
+========================= */
+
+.buttons {
+    margin-top: 18px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    flex: 1;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    text-decoration: none;
+    color: var(--text);
+
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+
+    border: 1px solid #7f3945;
+    background: linear-gradient(180deg, #6b2b36, #552029);
+
+    user-select: none;
+
+    line-height: 1;
+    padding: 0;
+}
+
+.btn:hover {
+    background: linear-gradient(180deg, #7c3340, #632632);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    margin-top: 14px;
+    text-align: center;
+}
+
+.link {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--text);
+}

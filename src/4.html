@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DPADIO — Задание</title>
+    <link rel="stylesheet" href="4.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="window header">
+        <div class="title">DPADIO</div>
+        <div class="nav">
+            <a href="3.html">ЗАДАНИЯ</a>
+            <a href="5.html">ПРОФИЛЬ</a>
+            <a href="1.html">ВЫХОД</a>
+        </div>
+        <div id="user-display" class="user">Загрузка...</div>
+    </div>
+
+    <div class="window">
+        <h2 id="task-title">Загрузка задания...</h2>
+        <div id="task-desc" class="desc">Пожалуйста, подождите...</div>
+
+        <textarea id="code-input" class="console" placeholder="# Напишите ваш Python код здесь"></textarea>
+
+        <div class="toolbar">
+            <button id="run-button">Выполнить код</button>
+            <button id="save-button">Отправить решение</button>
+            <button id="file-trigger">Загрузить файл</button>
+            <input type="file" id="file-upload" style="display:none;" accept=".py,.json">
+        </div>
+
+        <div id="output-console" class="output" style="background:#1e1e1e; color:#fff; padding:10px; margin-top:10px; white-space: pre-wrap;">
+            🐍 Жду действий...
+        </div>
+    </div>
+</div>
+
+<script src="interpreter.js"></script>
+<script type="py" src="./test.py" config="./conf.json"></script>
+
+</body>
+</html>
